@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Nathan Wong | D3.js Visualizations</title>
+    <style>
+        /* A little extra CSS just to center the D3 canvas nicely on the page */
+        #visContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            margin-top: 60px; /* Gives some breathing room below the navbar */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">NW</div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#footer">Contact</a></li>
+            <li><a href="visualizations.html">Visualizations</a></li>
+            <li><a href="new-visualizations.html">New Visualizations</a></li>
+            <li><a href="d3.html">D3.js</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://github.com/XxKRESTX" target="_blank" aria-label="Visit my GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nathan-wong-9486a9260" target="_blank" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nathanxp812@gmail.com" aria-label="Send me an email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <section class="section" style="margin-top: 80px;">
+        <h2 class="section-title">Interactive D3 Animation</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 20px;">
+            Click anywhere inside the canvas below to add a shape. (Max 10 shapes)
+        </p>
+        
+        <div id="visContainer"></div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <p>2026 Nathan Wong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script type="module" src="circleAnimation.js"></script>
+</body>
+</html>
